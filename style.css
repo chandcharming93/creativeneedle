@@ -31,6 +31,7 @@ body{
   font-weight: 300;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 img{ max-width: 100%; display: block; }
@@ -352,6 +353,7 @@ h1, h2, h3{
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   transition: background 0.18s ease;
+  min-width: 0;
 }
 .service-list li:hover{
   background: rgba(185,143,99,0.08);
@@ -364,6 +366,10 @@ h1, h2, h3{
   object-fit: cover;
   border: 1px solid var(--line);
 }
+.service-list li > div{
+  min-width: 0;
+  flex: 1 1 auto;
+}
 .service-list h3{
   font-size: 1.25rem;
   margin-bottom: 6px;
@@ -372,6 +378,7 @@ h1, h2, h3{
   margin: 0;
   color: var(--ink-soft);
   font-size: 0.94rem;
+  overflow-wrap: break-word;
 }
 
 /* ---------------------------------------------------
