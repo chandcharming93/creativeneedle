@@ -3,105 +3,153 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Creative Niddle — Everywear</title>
-<meta name="description" content="Creative Niddle makes clothing for every body and every day. Explore our story and collection.">
-<meta property="og:title" content="Creative Niddle — Everywear">
-<meta property="og:description" content="Clothing for every body and every day.">
-<meta property="og:type" content="website">
+<title>Creative Needle Designer — Chetna Patel, Surat</title>
+<meta name="description" content="Custom tailoring in Surat by Chetna Patel — gowns, lehengas, blouses, dresses and more, stitched to your fit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Petit+Formal+Script&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="tape-rule" aria-hidden="true"></div>
+
 <header class="site-header">
-  <div class="container">
-    <a href="index.html" class="brand">
-      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M6 26 L24 8" stroke="currentColor" stroke-width="2"/>
-        <circle cx="25.5" cy="6.5" r="2.5" stroke="currentColor" stroke-width="2"/>
-        <path d="M6 26 C 10 24, 8 20, 12 19 C 16 18, 14 14, 18 13" stroke="#8C2F26" stroke-width="1.6" stroke-dasharray="3 2" fill="none"/>
-      </svg>
-      <span class="brand-text">Creative Niddle</span>
-    </a>
-    <nav class="main-nav" aria-label="Primary">
-      <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="collection.html">Collection</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+  <a href="#top" class="brand">
+    <img src="assets/logo-mark.png" alt="" class="brand-mark">
+    <span class="brand-name">Creative Needle</span>
+  </a>
+  <nav class="site-nav">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Visit</a>
+  </nav>
+  <a href="tel:+917600091006" class="header-phone">7600 091 006</a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
-<section class="hero">
-  <div class="container">
+<main id="top">
+
+  <section class="hero">
     <div class="hero-copy">
-      <p class="hero-eyebrow">Every stitch, every body</p>
-      <h1>Everywear, made by hand.</h1>
-      <p class="lede">Creative Niddle designs clothing meant to be worn — not admired from a rack. Simple cuts, honest fabric, and a needle that doesn't cut corners.</p>
-      <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:8px;">
-        <a href="collection.html" class="btn">View the collection</a>
-        <a href="about.html" class="btn btn-ghost">Our story</a>
+      <p class="hero-kicker">Tailored for you, styled by us</p>
+      <h1>Creative Needle<br><span class="hero-script">Designer</span></h1>
+      <p class="hero-by">A tailoring house run by <strong>Chetna Patel</strong>, in Mota Varachha, Surat.</p>
+      <p class="hero-lede">Every gown, lehenga and blouse is cut to your own measurements, not a size chart — so the fit is exact and the finish is entirely yours.</p>
+      <div class="hero-actions">
+        <a href="tel:+917600091006" class="btn btn-solid">Call to book a fitting</a>
+        <a href="#services" class="btn btn-line">See what we stitch</a>
       </div>
     </div>
-    <div class="hero-art">
-      <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M60 20 L140 20 L150 60 L130 60 L130 200 L70 200 L70 60 L50 60 Z" fill="none" stroke="#24211D" stroke-width="3"/>
-        <path d="M75 55 C 90 70, 110 70, 125 55" stroke="#8C2F26" stroke-width="2.5" stroke-dasharray="5 4" fill="none"/>
-        <path d="M70 200 L70 210 M130 200 L130 210" stroke="#24211D" stroke-width="3"/>
-        <circle cx="100" cy="120" r="3" fill="#B98B3E"/>
-        <circle cx="100" cy="140" r="3" fill="#B98B3E"/>
-        <circle cx="100" cy="160" r="3" fill="#B98B3E"/>
-        <path d="M100 100 L100 180" stroke="#B98B3E" stroke-width="1" stroke-dasharray="2 6"/>
-      </svg>
-    </div>
-  </div>
-</section>
-
-<hr class="stitch">
-
-<section class="section">
-  <div class="container">
-    <h2>What we believe in</h2>
-    <p>A garment should fit the person, not the other way round. That idea shapes everything we make.</p>
-    <div class="grid-3">
-      <div class="feature">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M4 12 L20 12 M4 12 L9 7 M4 12 L9 17"/></svg>
-        <h3>Cut for real bodies</h3>
-        <p>Our blocks are drafted across a wide size range from the start, not graded up or down from one sample.</p>
-      </div>
-      <div class="feature">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8"/><path d="M12 8 L12 16 M8 12 L16 12"/></svg>
-        <h3>Fabric first</h3>
-        <p>We choose the cloth before we choose the silhouette, so the two always make sense together.</p>
-      </div>
-      <div class="feature">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M4 6 L20 6 M4 12 L20 12 M4 18 L14 18"/></svg>
-        <h3>Made to last a season past this one</h3>
-        <p>Reinforced seams and finished hems, so the piece still holds its shape after the tenth wash.</p>
+    <div class="hero-figure">
+      <img src="assets/hero-dress.jpg" alt="A sage green pleated gown on a tailor's mannequin, measured with a tape for a custom fit." loading="eager">
+      <div class="fit-badge">
+        <span>Perfect fit,<br>made just for you</span>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<hr class="stitch">
+  <section class="intro" id="about">
+    <div class="intro-mark">”</div>
+    <p class="intro-line">Custom fit, your style, our stitch — made for you, made with care.</p>
+    <p class="intro-signoff"><span class="hero-script small">Chetna Patel</span></p>
+  </section>
 
-<section class="section section-denim">
-  <div class="container" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:24px;">
-    <div>
-      <h2 style="margin-bottom:6px;">Ready to see what's on the table?</h2>
-      <p style="margin:0;">Browse the current collection — shirts, everyday dresses, jackets, and more.</p>
+  <section class="services" id="services">
+    <div class="section-head">
+      <h2>Our services</h2>
+      <p>From a first blouse to a full bridal lehenga, everything is cut and stitched to your own measurements.</p>
     </div>
-    <a href="collection.html" class="btn">Browse collection</a>
-  </div>
-</section>
+
+    <ul class="service-list">
+      <li>
+        <h3>Custom outfit</h3>
+        <p>Gowns, lehenga, blouse, dresses, tops, skirts, short and long kurti, trousers and more.</p>
+      </li>
+      <li>
+        <h3>Trending outfits</h3>
+        <p>Co-ord sets, cape sets, sharara, anarkali and indo-western silhouettes, made in your size.</p>
+      </li>
+      <li>
+        <h3>Lehenga</h3>
+        <p>Tradition with a perfect fit — from everyday wear to full bridal weight.</p>
+      </li>
+      <li>
+        <h3>Blouse</h3>
+        <p>Perfect fit, perfect style, stitched to sit exactly where it should.</p>
+      </li>
+      <li>
+        <h3>Dresses</h3>
+        <p>Stitched for every occasion, from festive evenings to everyday wear.</p>
+      </li>
+      <li>
+        <h3>Tops</h3>
+        <p>Style it your way, in the cut and fabric you already have in mind.</p>
+      </li>
+      <li>
+        <h3>Skirts</h3>
+        <p>Flair in every stitch, fitted at the waist and finished to fall right.</p>
+      </li>
+      <li>
+        <h3>Short &amp; long kurti</h3>
+        <p>From casual to classy, tailored for daily wear or festive occasions.</p>
+      </li>
+      <li>
+        <h3>Trouser</h3>
+        <p>Tailored for the perfect fit, at the waist, hip and length.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="pillars">
+    <div class="pillar">
+      <h3>Made to your measurements</h3>
+      <p>Every piece starts with your own fitting, not a standard size — so it sits right the first time.</p>
+    </div>
+    <div class="pillar">
+      <h3>Handmade, close to home</h3>
+      <p>Stitched by hand in our Mota Varachha workshop, one order at a time.</p>
+    </div>
+    <div class="pillar">
+      <h3>Traditional and trending</h3>
+      <p>From bridal lehenga to indo-western co-ords, styles are kept current without losing the fit.</p>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="section-head">
+      <h2>Your style, our stitch</h2>
+      <p>A glimpse of the fit and finish every order is stitched to.</p>
+    </div>
+    <div class="gallery-frame">
+      <img src="assets/gallery-detail.jpg" alt="Close detail of the pleated bodice on a sage green gown, measured with a tailor's tape." loading="lazy">
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-block">
+        <h2>Visit the workshop</h2>
+        <p class="contact-line">Shop No. 243, Second Floor,<br>Rangila Park, near Yamuna Chowk,<br>Mota Varachha, Surat.</p>
+        <p class="contact-line"><a href="tel:+917600091006">7600 091 006</a></p>
+        <a href="tel:+917600091006" class="btn btn-solid">Call to book a fitting</a>
+      </div>
+      <div class="contact-block contact-thanks">
+        <p>Thank you for supporting handmade and local.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
 
 <footer class="site-footer">
-  <div class="container">
-    <p>&copy; 2026 Creative Niddle. Everywear.</p>
-    <p><a href="contact.html">Get in touch</a></p>
-  </div>
+  <span>Creative Needle Designer — Chetna Patel</span>
+  <span>Mota Varachha, Surat</span>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
