@@ -1,6 +1,7 @@
 document.documentElement.classList.add('js');
 
 const toggle = document.querySelector('.nav-toggle');
+const toggleLabel = document.querySelector('.nav-toggle-label');
 const nav = document.querySelector('.site-nav');
 const navLinks = [...document.querySelectorAll('.site-nav a')];
 
@@ -8,12 +9,14 @@ const closeMenu = () => {
   document.body.classList.remove('nav-open');
   toggle?.setAttribute('aria-expanded', 'false');
   toggle?.setAttribute('aria-label', 'Open navigation');
+  if (toggleLabel) toggleLabel.textContent = 'Menu';
 };
 
 toggle?.addEventListener('click', () => {
   const isOpen = document.body.classList.toggle('nav-open');
   toggle.setAttribute('aria-expanded', String(isOpen));
   toggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+  if (toggleLabel) toggleLabel.textContent = isOpen ? 'Close' : 'Menu';
 });
 
 navLinks.forEach((link) => link.addEventListener('click', closeMenu));
